@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d436028d5.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <title>E-Commerce</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#">A-STORE</a></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">Blog</a></li>
+            <li class="item"><a href="#">Contact</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>   
+    </nav>
+
+    <div class="complex-container bg">
+        <div class="content-1">
+            <p class="pbold">Paltrow often peddles</p>
+            <h1>BEST BEAUTY ITEMS</h1>
+            <p>Paltrow often peddles questionable science and theories.</p>
+            <p>But she’s far from alone in her skepticism toward conventional makeup.</p>
+            <button class="buttonstart">START SHOPPING</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="recentprod">
+        <div class="subheader">
+            <h3>RECENT PRODUCTS</h3>
+            <p  class="parag">Paltrow often peddles questionable science and theories.</p>
+            <p>But she’s far from alone in her skepticism toward conventional makeup.</p>
+        </div>
+    </div>
+
+    <div class="gallery-container">
+        <div>
+            <img class="image" src="./img/BG.jpg" alt="" srcset="">
+            <p>Lotion</p>
+            <p class="price">100 Php</p>
+        </div>
+        <div>
+            <img class="image" src="./img/BG.jpg" alt="" srcset="">
+            <p>Lotion</p>
+            <p class="price">100 Php</p>
+        </div>
+        <div>
+            <img class="image" src="./img/BG.jpg" alt="" srcset="">
+            <p>Lotion</p>
+            <p class="price">100 Php</p>
+        </div>
+        <div>
+            <img class="image" src="./img/BG.jpg" alt="" srcset="">
+            <p>Lotion</p>
+            <p class="price">100 Php</p>
+        </div>
+    </div>
+
+    <div class="promodesign">
+        <div class="design-container">
+            <div class="design-1 ">
+                <img class="image1" src="./img/sale1.jpg" alt="" srcset="">
+            </div>
+            <div class="right-side">
+            <div class="design-2 right-side">
+                <img class="image2 pad" src="./img/sale2.webp" alt="" srcset="">
+            </div>
+            <div class="design-3 right-side">
+                <img class="image3 pad" src="./img/sale3.webp" alt="" srcset="">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="subfooter">
+            <h1>JOIN OUR MAILING LIST</h1>
+            <p  class="paragfooter">Paltrow often peddles questionable science and theories.</p>
+            <p>But she’s far from alone in her skepticism toward conventional makeup.</p>
+            <input class="input" type="text" name="name" id="input">
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    $(function() {
+        $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+        });
+    });
+</script>
+</html>
